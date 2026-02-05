@@ -1,0 +1,28 @@
+public class Graphics {
+
+    // Simulated Graphics Drawing
+    static void drawRect(int x, int y, int w, int h) {
+        System.out.println("Room drawn using drawRect(" + x + "," + y + "," + w + "," + h + ")");
+    }
+
+    static void drawOval(int x, int y, int w, int h) {
+        System.out.println("Vent drawn using drawOval(" + x + "," + y + "," + w + "," + h + ")");
+    }
+
+    static void drawLine(int x1, int y1, int x2, int y2) {
+        System.out.println("Wall drawn using drawLine(" + x1 + "," + y1 + "," + x2 + "," + y2 + ")");
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Architecture Blueprint Visualizer\n");
+
+        drawRect(50, 50, 200, 120);     // Room
+        drawOval(130, 80, 40, 40);      // Vent
+
+        drawLine(50, 50, 250, 50);      // Walls
+        drawLine(50, 170, 250, 170);
+        drawLine(50, 50, 50, 170);
+        drawLine(250, 50, 250, 170);
+    }
+}
